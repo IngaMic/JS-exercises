@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+#ticker {
+    border: hotpink dotted;
+    height: 2em;
+    position: relative;
+    overflow: hidden;
+}
+
+#headlines {
+    white-space: nowrap;
+    position: absolute;
+    left: 100%;
+    padding-top: 8px;
+}
+
+#headlines a {
+    padding: 0px 40px 0px 40px;
+    color: black;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-decoration: none;
+}
+/* 
+#headlines a:hover {
+    font-weight: bolder;
+    color: indigo;
+    text-decoration: underline;
+} */
+
+#newHeadlines {
+    white-space: nowrap;
+    position: absolute;
+    right: 100%;
+    padding-top: 8px;
+}
+
+#newHeadlines a {
+    padding: 0px 40px 0px 40px;
+    color: darkslategrey;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-decoration: none;
+}
+
+#ticker2 {
+    border: hotpink dotted;
+    height: 2em;
+    position: relative;
+    margin-top: 600px;
+    overflow: hidden;
+}
