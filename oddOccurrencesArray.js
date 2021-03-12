@@ -1,22 +1,17 @@
 function solution(A) {
-    let value;
-    let ind;
-    A.sort(function (a, b) {
-        return a - b;
-    });
-    console.log(A);
-    for (let i = 0; i < A.length; i++) {
-        value = A[0];
-        if (A[1] == value) {
-            A.splice(0, 1);
-            ind = A.indexOf(value);
-
-            if (A.indexOf(value) !== -1) {
-                A.splice(0, 1);
-            }
+    // write your code in JavaScript (Node.js 8.9.4)
+    const sorted = A.sort();
+    let result;
+    for (let i = 0; i < sorted.length; i++) {
+        let first = A[i];
+        let second = A[i+1]
+        if(first === second){
+            i++
+        } else {
+            result = first;
         }
     }
-    return value;
+    return result;
 }
 console.log(
     "solution :",
