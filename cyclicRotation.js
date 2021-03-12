@@ -1,4 +1,8 @@
 function solution(A, K) {
+     if (A.length == 0){
+        return [];
+    }
+    
     let last = A.length - 1;
 
     for (let i = 0; i < K; i++) {
